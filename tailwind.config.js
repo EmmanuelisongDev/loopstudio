@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ['./index.html','./script.js'],
   theme: {
     extend: {
       backgroundImage:{
@@ -11,6 +11,15 @@ module.exports = {
       fontFamily: {
         body:['Nunito','Poppins','Sora'],
         weird:['Cherry Cream Soda','Nunito','Poppins','Sora']
+      },
+      animation:{
+        marquee:'marquee 10s linear infinite'
+      },
+      keyframes:{
+        marquee:{
+          '0%':{transform:'translateX(0%)'},
+          '100%':{transform:'translateX(-100%)'},
+        }
       }
     },
   },

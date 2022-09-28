@@ -5,10 +5,7 @@
 @tailwind utilities;
 
 
-*{
-    @apply
-    font-weird
-}
+
 
 
 
@@ -35,6 +32,7 @@ header{
     pl-10
     md:flex
     md:flex-row
+    
     md:justify-between
     md:align-middle
 } 
@@ -130,7 +128,7 @@ header{
     flex
     flex-wrap
     w-full
-    p-14
+    p-1
     text-5xl
     align-middle
     justify-center
@@ -249,7 +247,7 @@ header{
     text-white
     text-opacity-100
     hover:opacity-95
-    hover:text-black
+    hover:text-violet-900
     hover:text-opacity-100
 }
 
@@ -289,6 +287,8 @@ header{
     hover:text-white
     /* md:w-1/4 */
 }
+
+
 
 /* ******************************************************************************************************************************* */
 /* FOOTER */
@@ -363,4 +363,68 @@ footer{
     text-gray-500
     text-center
     py-10
+}
+
+
+/* ******************************************************************************************** */
+/* ANIMATIONS */
+
+.hd{
+    @apply
+    opacity-0
+    blur-sm
+    transition-all
+    ease-linear
+    duration-300
+    /* -translate-x-full */
+}
+/* 
+@media(prefers-reduced-motion){
+    .hd{
+        @apply
+        transition-none
+    }
+} */
+
+.show{
+    @apply
+    blur-none
+    opacity-100
+    /* translate-x-0 */
+}
+
+.square:nth-child(2){
+    @apply
+    transition-all
+    duration-100
+}
+.square:nth-child(3){
+    @apply
+    transition-all
+    duration-150
+}
+.square:nth-child(4){
+    @apply
+    transition-all
+    duration-200
+}
+.square:nth-child(5){
+    @apply
+    transition-all
+    duration-300 
+}
+.square:nth-child(6){
+    @apply
+    transition-all
+    duration-500
+}
+.square:nth-child(7){
+    @apply
+    transition-all
+    duration-700
+}
+.square:nth-child(8){
+    @apply
+    transition-all
+    duration-1000
 }
