@@ -90,7 +90,6 @@ header{
     @apply
     font-normal
     text-white
-    hover:rounded-sm
     hover:border-b-4
     hover:border-b-white
     transition
